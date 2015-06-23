@@ -1,7 +1,6 @@
 <?php
 
 require_once 'database/connect.php';
-require_once 'database/connectapi.php';
 
 class Model {
 
@@ -15,6 +14,10 @@ class Model {
 
         $this->connection = new Connect();
        
+    }
+    
+    public function create_dummy () {
+        $this->connection->create_dummy();
     }
 
   

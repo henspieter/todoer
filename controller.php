@@ -8,7 +8,9 @@ class Controller {
         $this->model = $model;
     }
 
-    
+    public function create_dummy (){
+        $this->model->create_dummy();
+    }
     
    
 

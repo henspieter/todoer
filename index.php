@@ -9,7 +9,9 @@ require_once 'model.php';
 $model = new Model();
 $controller = new Controller($model);
 $view = new View($controller, $model);
-?>
-$view->header();
-$view->body();
 
+$controller->create_dummy();
+echo $view->header();
+echo $view->body();
+
+?>
