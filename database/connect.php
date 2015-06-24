@@ -17,7 +17,7 @@ class Connect {
     //put your code here
     public function __construct() {
         
-        if ($_SERVER['SERVER_NAME'] == 'localhost'){
+        if ($_SERVER['SERVER_NAME'] == 'localhost' or true){
         $this->con = mysqli_connect("localhost", "root", "admin", "todoers");
         } else {
             $this->con = mysqli_connect("sql210.byethost8.com", "b8_15184816", "mahajara", "b8_15184816_inventaris");
